@@ -1,16 +1,21 @@
-def add(x,y):
+def add(x, y):
     # doing addition operation
-    result = x+y
+    result = x + y
     return result
 
-def subtract(x,y):
-    # TODO
-    pass
+def subtract(x, y):
+    # doing subtraction operation
+    result = x - y
+    return result
 
-def multiply(x,y):
-    # TODO
-    pass 
+def multiply(x, y):
+    # doing multiplication operation
+    result = x * y
+    return result
 
-def divide(x,y):
-    # TODO
-    pass
+def divide(x, y):
+    # doing division operation
+    if y == 0:
+        raise ValueError("Cannot divide by zero")
+    result = x / y
+    return result
