@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask Calculator</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Simple Flask Calculator</h1>
+    <p>
+        A short description
+    </p>
+    <form method="POST" action="/calculate">
+        <label for="number1">Number 1:</label>
+        <input type="text" id="number1" name="number1" required>
+        <br>
+        <label for="number2">Number 2:</label>
+        <input type="text" id="number2" name="number2" required>
+        <br>
+        <label for="operation">Operation:</label>
+        <select id="operation" name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+        <br>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if result is not none %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+    <script>
+        console.log("version v1.0.0");    
+    </script>
+</body>
+
+</html>
